@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html , body{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+}
+
+#root{
+  height: 100%;
+  width: 100%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.genre{
+  display: flex;
+  flex-direction: row;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for specific element */
+#movieCast::-webkit-scrollbar {
+  display: none;
+}
+
+
+.movieTitle{
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
